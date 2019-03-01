@@ -25,14 +25,14 @@ import (
 	"sync"
 	"testing"
 
-	"go.uber.org/zap/internal/exit"
-	"go.uber.org/zap/internal/ztest"
-	"go.uber.org/zap/zapcore"
-	"go.uber.org/zap/zaptest/observer"
+	"github.com/Beeketing/zap/internal/exit"
+	"github.com/Beeketing/zap/internal/ztest"
+	"github.com/Beeketing/zap/zapcore"
+	"github.com/Beeketing/zap/zaptest/observer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.uber.org/atomic"
+	"github.com/Beeketing/atomic"
 )
 
 func makeCountingHook() (func(zapcore.Entry) error, *atomic.Int64) {

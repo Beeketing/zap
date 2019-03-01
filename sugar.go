@@ -23,9 +23,9 @@ package zap
 import (
 	"fmt"
 
-	"go.uber.org/zap/zapcore"
+	"github.com/Beeketing/zap/zapcore"
 
-	"go.uber.org/multierr"
+	"github.com/Beeketing/multierr"
 )
 
 const (

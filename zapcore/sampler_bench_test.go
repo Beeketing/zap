@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"go.uber.org/zap/internal/ztest"
-	. "go.uber.org/zap/zapcore"
+	"github.com/Beeketing/zap/internal/ztest"
+	. "github.com/Beeketing/zap/zapcore"
 )
 
 var counterTestCases = [][]string{
