@@ -30,10 +30,10 @@ import (
 	"testing/quick"
 	"time"
 
-	"go.uber.org/zap/internal/bufferpool"
+	"github.com/Beeketing/zap/internal/bufferpool"
 
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/multierr"
+	"github.com/Beeketing/multierr"
 )
 
 func TestJSONClone(t *testing.T) {

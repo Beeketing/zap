@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"go.uber.org/zap"
+	"github.com/Beeketing/zap"
 
 	"github.com/stretchr/testify/assert"
 
-	. "go.uber.org/zap/zapcore"
+	. "github.com/Beeketing/zap/zapcore"
 )
 
 type users int

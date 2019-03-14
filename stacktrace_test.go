@@ -42,9 +42,9 @@ func TestTakeStacktrace(t *testing.T) {
 
 func TestIsZapFrame(t *testing.T) {
 	zapFrames := []string{
-		"go.uber.org/zap.Stack",
-		"go.uber.org/zap.(*SugaredLogger).log",
-		"go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
+		"github.com/Beeketing/zap.Stack",
+		"github.com/Beeketing/zap.(*SugaredLogger).log",
+		"github.com/Beeketing/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
 		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.Stack",
 		"github.com/uber/tchannel-go/vendor/go.uber.org/zap.(*SugaredLogger).log",
 		"github.com/uber/tchannel-go/vendor/go.uber.org/zap/zapcore.(ArrayMarshalerFunc).MarshalLogArray",
@@ -52,8 +52,8 @@ func TestIsZapFrame(t *testing.T) {
 	nonZapFrames := []string{
 		"github.com/uber/tchannel-go.NewChannel",
 		"go.uber.org/not-zap.New",
-		"go.uber.org/zapext.ctx",
-		"go.uber.org/zap_ext/ctx.New",
+		"github.com/Beeketing/zapext.ctx",
+		"github.com/Beeketing/zap_ext/ctx.New",
 	}
 
 	t.Run("zap frames", func(t *testing.T) {
